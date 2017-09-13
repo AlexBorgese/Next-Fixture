@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a app component should render the loading screen 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <AppLoading />,
+  "nodes": Array [
+    <AppLoading />,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <App />,
+    "_instance": App {
+      "context": Object {},
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {
+        "assetsAreLoaded": false,
+      },
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <AppLoading />,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <App />,
+}
+`;
+
+exports[`Given a app component should render the root without loading screen 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    style={
+        Object {
+            "backgroundColor": "#fff",
+            "flex": 1,
+          }
+    }
+>
+    <StatusBar
+        animated={false}
+        barStyle="default"
+        showHideTransition="fade"
+    />
+    <RootNavigator />
+</View>,
+  "nodes": Array [
+    <View
+      style={
+            Object {
+                  "backgroundColor": "#fff",
+                  "flex": 1,
+                }
+      }
+>
+      <StatusBar
+            animated={false}
+            barStyle="default"
+            showHideTransition="fade"
+      />
+      <RootNavigator />
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <App
+      skipLoadingScreen={true}
+/>,
+    "_instance": App {
+      "context": Object {},
+      "props": Object {
+        "skipLoadingScreen": true,
+      },
+      "refs": Object {},
+      "state": Object {
+        "assetsAreLoaded": false,
+      },
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <View
+      style={
+            Object {
+                  "backgroundColor": "#fff",
+                  "flex": 1,
+                }
+      }
+>
+      <StatusBar
+            animated={false}
+            barStyle="default"
+            showHideTransition="fade"
+      />
+      <RootNavigator />
+</View>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <App
+    skipLoadingScreen={true}
+/>,
+}
+`;
+
+exports[`renders the loading screen 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <AppLoading />,
+  "nodes": Array [
+    <AppLoading />,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <App />,
+    "_instance": App {
+      "context": Object {},
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {
+        "assetsAreLoaded": false,
+      },
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <AppLoading />,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <App />,
+}
+`;
+
+exports[`renders the root without loading screen 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    style={
+        Object {
+            "backgroundColor": "#fff",
+            "flex": 1,
+          }
+    }
+>
+    <StatusBar
+        animated={false}
+        barStyle="default"
+        showHideTransition="fade"
+    />
+    <RootNavigator />
+</View>,
+  "nodes": Array [
+    <View
+      style={
+            Object {
+                  "backgroundColor": "#fff",
+                  "flex": 1,
+                }
+      }
+>
+      <StatusBar
+            animated={false}
+            barStyle="default"
+            showHideTransition="fade"
+      />
+      <RootNavigator />
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <App
+      skipLoadingScreen={true}
+/>,
+    "_instance": App {
+      "context": Object {},
+      "props": Object {
+        "skipLoadingScreen": true,
+      },
+      "refs": Object {},
+      "state": Object {
+        "assetsAreLoaded": false,
+      },
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <View
+      style={
+            Object {
+                  "backgroundColor": "#fff",
+                  "flex": 1,
+                }
+      }
+>
+      <StatusBar
+            animated={false}
+            barStyle="default"
+            showHideTransition="fade"
+      />
+      <RootNavigator />
+</View>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <App
+    skipLoadingScreen={true}
+/>,
+}
+`;

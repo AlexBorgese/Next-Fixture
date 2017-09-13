@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a HomeScreen component should render the correct snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    style={
+        Object {
+            "backgroundColor": "red",
+          }
+    }
+>
+    <Calendar />
+</View>,
+  "nodes": Array [
+    <View
+      style={
+            Object {
+                  "backgroundColor": "red",
+                }
+      }
+>
+      <Calendar />
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <HomeScreen />,
+    "_instance": HomeScreen {
+      "context": Object {},
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {},
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <View
+      style={
+            Object {
+                  "backgroundColor": "red",
+                }
+      }
+>
+      <Calendar />
+</View>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <HomeScreen />,
+}
+`;
