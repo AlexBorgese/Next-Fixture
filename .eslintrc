@@ -10,7 +10,8 @@
       "react"
     ],
     "globals": {
-      "expect": true
+      "expect": true,
+      "beforeAll": true
     },
     "ecmaFeatures": {
       "arrowFunctions": true,

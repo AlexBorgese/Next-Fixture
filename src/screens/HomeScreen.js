@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import Calendar from '../components/Calendar';
+import MatchCalendar from '../components/MatchCalendar';
 
 export default class HomeScreen extends React.Component {
 	static navigationOptions = {
@@ -11,7 +11,7 @@ export default class HomeScreen extends React.Component {
 	render() {
 		return (
 			<View style={{ backgroundColor: 'red' }}>
-				<Calendar />
+				<MatchCalendar />
 			</View>
 		);
 	}

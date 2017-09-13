@@ -15,7 +15,7 @@ ShallowWrapper {
           }
     }
 >
-    <Calendar />
+    <MatchCalendar />
 </View>,
   "nodes": Array [
     <View
@@ -25,7 +25,7 @@ ShallowWrapper {
                 }
       }
 >
-      <Calendar />
+      <MatchCalendar />
 </View>,
   ],
   "options": Object {},
@@ -49,7 +49,7 @@ ShallowWrapper {
                 }
       }
 >
-      <Calendar />
+      <MatchCalendar />
 </View>,
     "_rendering": false,
     "_updater": Updater {
