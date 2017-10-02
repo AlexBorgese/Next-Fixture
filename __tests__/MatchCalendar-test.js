@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import MatchCalendar from '../src/components/MatchCalendar';
+import MatchCalendar from '../components/MatchCalendar';
 
 describe('Given the MatchCalendar component', () => {
 	let component;

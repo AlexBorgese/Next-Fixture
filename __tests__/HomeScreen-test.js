@@ -1,6 +1,5 @@
-import ReactNative from 'react-native';
 import React from 'react';
-import HomeScreen from '../src/screens/HomeScreen';
+import HomeScreen from '../screens/HomeScreen';
 import { shallow } from 'enzyme';
 
 describe('Given a HomeScreen component', () => {

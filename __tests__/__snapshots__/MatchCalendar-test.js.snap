@@ -20,7 +20,15 @@ ShallowWrapper {
   "renderer": ReactShallowRenderer {
     "_context": Object {},
     "_element": <MatchCalendar />,
-    "_instance": null,
+    "_instance": MatchCalendar {
+      "context": Object {},
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {},
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+    },
     "_newState": null,
     "_rendered": <View>
       <Calendar />
