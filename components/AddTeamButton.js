@@ -1,47 +1,42 @@
 import React from 'react';
-import { View, Button, TextInput, Text } from 'react-native';
+import { View, TextInput, Text } from 'react-native';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as Actions from '../actions/';
+
 import { addTeam, updateTeamList } from '../helpers/StorageHelper';
 
-export default class AddTeamButton extends React.Component {
+function mapStateToProps(state) {
+	return { selectedTeam: state.SelectedTeamReducers.selectedTeam };
+}
+
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators(Actions, dispatch);
+}
+
+export class AddTeamButton extends React.Component {
 	constructor() {
 		super();
-		this.state = {
-			teamName: '',
-			teamList: []
-		};
-	}
-
-	componentDidMount() {
-		this.setInitialList();
-	}
-
-	addTeamToList(teamName) {
-		console.log('adding team name', teamName);
-		addTeam(teamName);
-		this.setInitialList();
-	}
-
-	setInitialList() {
-		this.setState({ teamList: updateTeamList() });
 	}
 
 	_returnTeams() {
-		console.log('team list', this.state.teamList);
-		return updateTeamList() || 'No teams added!';
+
 	}
 
 	render() {
-		console.log(this.state.teamList);
+		console.log(this.props);
 		return (
 			<View>
 				<TextInput
 					style={
 						{ height: 40, borderColor: 'gray', borderWidth: 1 }
 					}
-					onSubmitEditing={(teamName) => this.addTeamToList(teamName)}
+					onChangeText={(teamName) => this.props.setTeam({ selectedTeam: teamName })}
 				/>
-				<Text>{ this._returnTeams() }</Text>
+				<Text>{ this.props.selectedTeam.selectedTeam}</Text>
 			</View>
 		);
 	}
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(AddTeamButton);

@@ -1,21 +1,27 @@
 import { AsyncStorage } from 'react-native';
+import React from 'react';
 
-const listOfTeamsArray = [];
+import ListItem from '../components/ListItem';
+
+const listOfTasksArray = [];
 
 export const addTeam = async (team) => {
-	const listOfTeams = [ ...listOfTeamsArray, team ];
-	console.log(listOfTeams);
-	await AsyncStorage.setItem('listOfTeams',
-		JSON.stringify(listOfTeams));
+	listOfTasksArray.push(team);
+
+	await AsyncStorage.setItem('listOfTasks',
+		JSON.stringify(listOfTasksArray));
 };
 
-export const updateTeamList = async () => {
-	try {
-		const value = await AsyncStorage.getItem('listOfTeams');
-		if (value !== null) {
-			return JSON.stringify(value);
-		}
-	} catch (error) {
-		console.log('error retriving data');
-	}
+export const updateTeamList = () => {
+	AsyncStorage.getAllKeys((err, keys) => {
+		AsyncStorage.multiGet(keys, (err, stores) => {
+			stores.map((result, i, store) => {
+			// get at each store's key/value so you can work with it
+				let value = store[i][1];
+				console.log('value', value);
+				console.log('result', result[0]);
+				return <ListItem value={ value } />;
+			});
+		});
+	});
 };
