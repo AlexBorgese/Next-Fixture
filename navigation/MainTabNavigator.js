@@ -5,16 +5,12 @@ import { Ionicons } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
 
 import HomeScreen from '../screens/HomeScreen';
-import TeamSelectionScreen from '../screens/TeamSelectionScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 export default TabNavigator(
 	{
 		Home: {
 			screen: HomeScreen
-		},
-		Links: {
-			screen: TeamSelectionScreen
 		},
 		Settings: {
 			screen: SettingsScreen

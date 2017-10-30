@@ -2,13 +2,14 @@ import React from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font } from 'expo';
 import { Ionicons } from '@expo/vector-icons';
-import { createStore, combineReducers } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 
 import RootNavigation from './navigation/RootNavigation';
 import SelectedTeamReducers from './reducers/SelectedTeam';
 
-const store = createStore(combineReducers({ SelectedTeamReducers }));
+const store = createStore(SelectedTeamReducers, undefined, applyMiddleware(thunk));
 
 export default class App extends React.Component {
 	state = {
